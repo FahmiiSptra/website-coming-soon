@@ -1,0 +1,52 @@
+/* reset css */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url('./bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: #f0f0f0;
+  font-family: 'Fira Code';
+}
+header {
+  padding: 1rem;
+  font-size: 2rem;
+}
+section {
+  position: absolute;
+  top: 35%;
+  text-align: center;
+  width: 100%;
+  font-size: 4rem;
+  text-shadow: 2px 2px 3px black;
+}
+section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  transform: scaleX(1);
+  border: 1px solid black;
+}
+article {
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  width: 100%;
+  font-size: 2rem;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+}
+footer a {
+  color: aqua;
+  text-decoration: none;
+}
